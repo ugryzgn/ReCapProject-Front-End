@@ -12,7 +12,7 @@ export class ColorService {
   constructor(private httpClient:HttpClient) { }
 
   
-  getCars():Observable<ColorResponseModel>{
+  getColors():Observable<ColorResponseModel>{
     return this.httpClient.get<ColorResponseModel>(this.apiUrl);
   }
 }
